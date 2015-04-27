@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe ERRORXXXXUsersController do
+describe UsersController do
   render_views
 
   describe "GET 'index'" do
@@ -17,7 +17,7 @@ describe ERRORXXXXUsersController do
       before(:each) do
         @user = test_sign_in(Factory(:user))
         second = Factory(:user, :name => "Bob", :email => "another@example.com")
-        third  = Factory(:user, :name => "Ben", :email => "another@example.net")
+        third  = Factory(:user, :name => "Dan", :email => "another@example.net")
         
         30.times do
           Factory(:user, :name => Factory.next(:name),
