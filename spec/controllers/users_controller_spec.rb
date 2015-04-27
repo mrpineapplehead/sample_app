@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe UsersController do
+describe ERRORXXXXUsersController do
   render_views
 
   describe "GET 'index'" do
